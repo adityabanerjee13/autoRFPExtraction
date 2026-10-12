@@ -1,0 +1,489 @@
+{
+  "Bid Number": "JA-207652 (SOURCING #168884)",
+  "Title": "Student and Staff Computing Devices",
+  "company_name": "Dallas Independent School District",
+  "contact_info": {
+    "buyer_name": "Jasmine Alzate",
+    "buyer_email": "JALZATE@dallasisd.org",
+    "buyer_phone": "972-925-3700",
+    "procurement_office_phone": "972-925-3700",
+    "procurement_office_email": "ProcurementCS@dallasisd.org",
+    "mailing_address": "Dallas ISD Procurement Services, 9400 N Central Expwy, Suite 1510, Dallas, TX 75231",
+    "portal_url": "https://www.dallasisd.org/domain/143",
+    "solicitation_url": "https://www.dallasisd.org/Page/1541",
+    "m_wbe_office": "9400 N. Central Expressway, Dallas, TX 75231 | 972.925.4140 | www.dallasisd.org/mwbe"
+  },
+  "Due Date": {
+    "due": "2024-07-09T14:00:00-05:00",
+    "original_due": "2024-06-27T14:00:00-05:00",
+    "timezone": "CST",
+    "source": "doc2"
+  },
+  "Pre Bid Meeting": {
+    "datetime": "2024-06-10T14:00:00-05:00",
+    "mandatory": null,
+    "location_or_link": "Microsoft Teams video conference: https://www.microsoft.com/en-us/microsoft-teams/join-a-meeting, Meeting ID: 270 031 467 036, Passcode: N9ndKY",
+    "questions_due": "2024-06-11T16:00:00-05:00",
+    "answers_posted": "2024-06-13T18:00:00-05:00"
+  },
+  "Delivery Date": {
+    "notes": "Delivery schedule to be coordinated with Dallas ISD ED TECH department. Quantities will fluctuate over contract life. No fixed monthly estimates provided. White glove service including asset decaling, asset reporting, etching, and delivery required starting from September 2024."
+  },
+  "Bid Submission Type": {
+    "methods": [
+      "electronic portal",
+      "sealed hard copy manual delivery"
+    ],
+    "portal_url": "https://www.dallasisd.org/domain/143",
+    "hard_copy_count": 1,
+    "delivery_address": "Dallas ISD Procurement Services, 9400 N Central Expwy, Ste 1510, Dallas, TX 75231",
+    "prohibited_methods": [
+      "fax",
+      "email"
+    ],
+    "procurement_method": "RFP"
+  },
+  "Term of Bid": {
+    "initial_term_years": 3,
+    "renewal_count": 2,
+    "renewal_term_years": 1,
+    "max_total_years": 5,
+    "notes": "Contract term is a three (3) year agreement with two (2) successive one (1) year renewals based on mutual consent. Either party must give written notice at least 90 days prior to contract expiration to not renew. The contract is firm fixed price with price adjustments at renewals requiring notification 120 days before anniversary."
+  },
+  "Payment Terms": {
+    "terms": "Net 10 for subcontractor payments; district pays within 10 days of invoice receipt. Firm fixed price contract. No retainage over 5%. Prompt payment clause included.",
+    "net_days": 10,
+    "funding_source": "Bond-funded money per Addendum 1",
+    "notes": "Prime vendors must pay subcontractors within 10 days of payment from district; no withholding of non-disputed payments; retainage capped at 5%. Vendor to disclose all fees in fixed price. P-card acceptance and escalation rules not specified."
+  },
+  "Bid Bond Requirement": {
+    "required": false,
+    "amount": null,
+    "other_bonds": [
+      "performance bond",
+      "payment bond"
+    ],
+    "insurance_notes": "Certificate of insurance/bond must be submitted within 10 days of award; coverage must meet solicitations requirements. Failure to provide may cause contract termination. Any changes to coverage must be notified within 10 days."
+  },
+  "Contract or Cooperative to use": {
+    "vehicle": "Direct agency contract with Dallas ISD",
+    "cooperative_name": "Educational Purchasing Cooperative of North Texas (EPCNT)",
+    "others_may_ride": true,
+    "rider_programs": [
+      "CENTRAL TEXAS PURCHASING ALLIANCE (CTPA)",
+      "Educational Purchasing Cooperative of North Texas (EPCNT)"
+    ]
+  },
+  "Installation": {
+    "required": true,
+    "services": [
+      "software installation",
+      "asset tagging",
+      "etching",
+      "device deployment and setup",
+      "asset control reporting"
+    ],
+    "notes": "Vendor coordinates deployment schedule with Dallas ISD ED TECH department. Etching required only on laptops. Delivery and deployment must meet scheduled deadlines."
+  },
+  "Any Additional Documentation Required": [
+    {
+      "name": "Form 1295 - Certificate of Interested Parties",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "Addendum 1, doc1 page 4, doc3 page 14"
+    },
+    {
+      "name": "Signed Addendum Acknowledgment Form Addendum 1",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "Addendum 1, doc1 page 5"
+    },
+    {
+      "name": "Signed Addendum Acknowledgment Form Addendum 2",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "Addendum 2, doc2 page 1"
+    },
+    {
+      "name": "MWBE Forms",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 page 33"
+    },
+    {
+      "name": "W9 Form",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 page 33"
+    },
+    {
+      "name": "Subcontractor Forms (one per subcontractor)",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 page 11"
+    },
+    {
+      "name": "Letter of Intent for each M/WBE Subcontractor (if utilized)",
+      "mandatory": false,
+      "timing": "post award",
+      "source": "doc3 page 48"
+    },
+    {
+      "name": "MWBE Master Joint Venture Agreement (if JV)",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 page 53"
+    },
+    {
+      "name": "Company Questionnaire and Vendor Certifications",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 pages 7-24"
+    },
+    {
+      "name": "Evidence of factory-authorized repair and maintenance certifications (for resellers)",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 page 3"
+    },
+    {
+      "name": "Pricing Proposal (Price Sheet)",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc3 price schedule pages 34-40"
+    }
+  ],
+  "Product": [
+    {
+      "line": "1",
+      "name": "Tier 1 Small Student Chromebook Laptop (Touch)",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Student Chromebook device"
+    },
+    {
+      "line": "2",
+      "name": "Tier 2 Large Student Chromebook Laptop (Non-Touch)",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Student Chromebook device"
+    },
+    {
+      "line": "3",
+      "name": "Tier 3 Student Windows Laptop",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Student Windows laptop device"
+    },
+    {
+      "line": "4",
+      "name": "Student Tablet",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Student tablet device"
+    },
+    {
+      "line": "5",
+      "name": "Tier 1 Staff Basic Desktop",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Staff desktop device"
+    },
+    {
+      "line": "6",
+      "name": "Tier 2 Staff Professional Desktop",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Staff professional desktop device"
+    },
+    {
+      "line": "7",
+      "name": "Tier 1 Staff Laptop",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Staff basic laptop device"
+    },
+    {
+      "line": "8",
+      "name": "Tier 2 Staff Laptop",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Staff professional laptop device"
+    },
+    {
+      "line": "9",
+      "name": "Display Monitor - Touch",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Touch display monitor device"
+    },
+    {
+      "line": "10",
+      "name": "Display Monitor - Non-Touch",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Non-touch display monitor device"
+    },
+    {
+      "line": "11",
+      "name": "Additional Warranty - not included in the initial purchase of a device",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Additional warranty services"
+    },
+    {
+      "line": "12",
+      "name": "Device Deployment - include all associated costs for asset decaling and reporting, etching, and delivery",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Deployment services including asset decaling and etching"
+    },
+    {
+      "line": "13",
+      "name": "Subscriptions/Services Required with the purchase of any device",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Subscriptions or services associated with devices"
+    },
+    {
+      "line": "14",
+      "name": "Discount Percentage Off Catalog or List Price",
+      "unit": "Each",
+      "estimated_quantity": null,
+      "notes": "Discount offered off catalog or list price"
+    },
+    {
+      "line": "15.01",
+      "name": "Tier 1 Small Student Chromebook Laptop (Touch) FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 50000,
+      "notes": "Evaluation quantity for student Chromebooks"
+    },
+    {
+      "line": "15.02",
+      "name": "Tier 2 Large Student Chromebook Laptop (Non-Touch) FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 50000,
+      "notes": "Evaluation quantity for student Chromebooks"
+    },
+    {
+      "line": "16.01",
+      "name": "Tier 3 Student Windows Laptop FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 5000,
+      "notes": "Evaluation quantity for student Windows laptops"
+    },
+    {
+      "line": "17.01",
+      "name": "Student Tablet FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 50000,
+      "notes": "Evaluation quantity for student tablets"
+    },
+    {
+      "line": "18.01",
+      "name": "Tier 1 Staff Laptop FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 10000,
+      "notes": "Evaluation quantity for staff basic laptops"
+    },
+    {
+      "line": "18.02",
+      "name": "Tier 2 Staff Laptop FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 10000,
+      "notes": "Evaluation quantity for staff professional laptops"
+    },
+    {
+      "line": "19.01",
+      "name": "Tier 1 Staff Basic Desktop FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 5000,
+      "notes": "Evaluation quantity for staff basic desktops"
+    },
+    {
+      "line": "19.02",
+      "name": "Tier 2 Staff Professional Desktop FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 5000,
+      "notes": "Evaluation quantity for staff professional desktops"
+    },
+    {
+      "line": "20.01",
+      "name": "Display Monitor - Touch FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 5000,
+      "notes": "Evaluation quantity for touch display monitors"
+    },
+    {
+      "line": "20.02",
+      "name": "Display Monitor - Non-Touch FOR EVALUATION PURPOSES",
+      "unit": "Each",
+      "estimated_quantity": 5000,
+      "notes": "Evaluation quantity for non-touch display monitors"
+    },
+    {
+      "line": null,
+      "name": "Accessories: sleeves, cases, mice, keyboards, cables",
+      "unit": null,
+      "estimated_quantity": null,
+      "notes": "Accessories mentioned in scope"
+    }
+  ],
+  "Product Specification": {
+    "General Requirements": [
+      "All equipment must be new and of the manufacturer's current model in production at the time of each order executed over the life of the contracts resulting from this RFP.",
+      "All standard or optional equipment must be as advertised by the original equipment manufacturer (OEM) and must not consist of substitute or aftermarket equipment.",
+      "Equipment attachments or parts to be installed must follow the manufacturer's recommendations or standard industry practices.",
+      "Warranties shall become effective on the date the equipment is placed into service as agreed by Dallas ISD and the awarded vendor.",
+      "Warranties shall be equal to or exceed those offered to the general public.",
+      "Warranty service and repairs or replacements must be performed at no cost within five business days of the District reporting the issue to the vendor.",
+      "If the five business day repair period cannot be achieved, a temporary replacement device must be provided.",
+      "Vendor must maintain adequate stock of replacement devices and/or parts to ensure service within the repair timeframe."
+    ],
+    "Tier 1 Small Student Chromebook Laptop": [
+      "Enterprise Management Ready",
+      "Intel Celeron Processor N100 or equivalent",
+      "Display: Minimum 11.6 inch diagonal",
+      "Integrated Camera: 720p minimum",
+      "Screen Resolution 1366 x 768 Multi-touch",
+      "Memory: Minimum 8GB DDR5 Memory",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Power Supply: Type C, 65W",
+      "Battery Life: Minimum 10 hours",
+      "Ports: Minimum 2 USB 3.0; type C; 1 headphone/microphone combo",
+      "Storage: 64 GB eMMC",
+      "Chrome O/S License Required",
+      "Warranty: 1-year minimum"
+    ],
+    "Tier 2 Large Student Chromebook Laptop": [
+      "Enterprise Management Ready",
+      "Intel Celeron Processor N100 or equivalent",
+      "Display: Minimum 14 inch diagonal Non-Touch",
+      "Integrated Camera: 720p minimum",
+      "Screen Resolution 1920-1080",
+      "Memory: Minimum 8GB DDR5 Memory",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Power Supply: Type C, 65W",
+      "Battery Life: Minimum 10 Hours",
+      "Ports: Minimum 2 USB 3.0; 1 Type C; 65HDMI; 1 headphone/microphone combo",
+      "Storage: 128 GB eMMC",
+      "Chrome O/S License Required",
+      "Warranty: 1-year minimum"
+    ],
+    "Tier 3 Student Windows Laptop": [
+      "Enterprise Management Ready with Autopilot Enrollment",
+      "Intel i5 13th Gen or equivalent",
+      "Display: Minimum 13 inch diagonal",
+      "Integrated Camera: 720p minimum",
+      "Screen Resolution 1920-1080 Non-Touch",
+      "Memory: Minimum 16GB RAM DDR5 Memory",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Power Supply: Type C, 65W",
+      "Battery Life: Minimum 10 Hours",
+      "Ports: Minimum 2 USB 3.0; 1 Type C; 65HDMI; 1 headphone/microphone combo",
+      "Storage: 256 GB NVMe SSD",
+      "Windows 11 Pro",
+      "Warranty: 3-year minimum"
+    ],
+    "Student Tablet": [
+      "Enterprise Management Ready",
+      "Processor A13",
+      "Display: 10.2 inch Retina",
+      "Integrated Camera: 8MP Wide camera",
+      "Screen Resolution 2160 x 1620 Multi-touch",
+      "Wireless: 802.11AC and Bluetooth 4.2",
+      "Power Supply included",
+      "Battery Life: Minimum 10 Hours",
+      "Ports: 1 headphone or other personal audio connection",
+      "Storage: 64 GB",
+      "iOS 17",
+      "Warranty: 1-year minimum"
+    ],
+    "Tier 1 Staff Basic Desktop": [
+      "Enterprise Management Ready with Autopilot Enrollment",
+      "Processor: Intel i5 Processor, 14th Gen or equivalent",
+      "Display: Minimum 23.8 inch diagonal screen Touch Screen",
+      "Memory: Minimum 16GB RAM",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Ports: Minimum 3 USB 3.0; 2 USB-C; 1 HDMI; 1 headphone/microphone combo",
+      "Storage: 512 GB NVMe SSD",
+      "Windows 11 Pro",
+      "Warranty: 3-year minimum"
+    ],
+    "Tier 2 Staff Professional Desktop": [
+      "Enterprise Management Ready",
+      "Intel i7 Processor, 14th Gen or equivalent",
+      "Display: Minimum 23.8 inch diagonal screen Touch Screen",
+      "Memory: Minimum 32GB DDR5 RAM",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Ports: Minimum 3 USB 3.0; 1 USB-C, 1 HDMI; 1 headphone/microphone combo",
+      "Storage: 1 TB NVMe SSD",
+      "Windows 11 Pro or Mac O/S",
+      "4 GB Video card",
+      "Touchscreen optional",
+      "Warranty: 3-year minimum"
+    ],
+    "Tier 1 Staff Laptop": [
+      "Enterprise Management Ready",
+      "Intel i5 CPU, 14th Gen or equivalent",
+      "Display: Minimum 13 inch diagonal screen",
+      "Integrated Camera: 1080p",
+      "Memory: Minimum 16GB DDR5 RAM",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Power Supply: USB Type C, 65W",
+      "Battery Life: Minimum 10 hours",
+      "Ports: Minimum 1 USB 3.0;1 USB-C, 1 HDMI; 1 headphone/microphone combo",
+      "Storage: 512 GB NVMe SSD",
+      "O/S Windows 11 or Mac OS",
+      "Warranty: 3-year minimum"
+    ],
+    "Tier 2 Staff Laptop": [
+      "Enterprise Management Ready",
+      "Intel i7 CPU, 14th Gen or equivalent",
+      "Display: Minimum 13 inch diagonal screen",
+      "Integrated Camera: 1080p",
+      "Resolution: 1920 X 1080 minimum",
+      "Memory: Minimum 32GB DDR5 RAM",
+      "Wireless: 802.11AX WiFi-6E and Bluetooth 5.1",
+      "Power Supply: USB C, 65W",
+      "Battery Life: Minimum 10 hours",
+      "Ports: Minimum 2 USB 3.0; 1 HDMI; 1 headphone/microphone combo",
+      "Storage: 1 TB NVMe SSD",
+      "O/S: Windows 11 or Mac OS",
+      "Warranty: 3-year minimum"
+    ],
+    "Display Monitor - Touch": [
+      "Minimum 24 inch diagonal screen",
+      "Resolution: 1920 X 1080",
+      "Port: USB 3.1 Hub",
+      "Aspect Ratio: 16:9",
+      "Contrast: 3000:1",
+      "Warranty: 3-year minimum"
+    ],
+    "Display Monitor - Non-Touch": [
+      "Minimum 24 inch diagonal screen",
+      "Resolution: 1920 X 1080",
+      "Port: USB 3.1 Hub",
+      "Warranty: 3-year minimum"
+    ]
+  },
+  "MFG for Registration": {
+    "manufacturers": [],
+    "brand_agnostic": true,
+    "reseller_requirements": "For proposing vendors who are resellers, submission of factory-authorized repair and maintenance certifications is mandatory. Vendors must provide demonstrated competencies and references.",
+    "platforms_referenced": [
+      "Intel processors (Celeron, i5, i7)",
+      "Windows 11 Pro",
+      "Chrome OS",
+      "iOS 17",
+      "Mac OS",
+      "WiFi 6E 802.11AX",
+      "Bluetooth 5.1"
+    ],
+    "registration_notes": "Vendor must meet industry standards, have authorized certifications, and maintain compliance with OEM warranty requirements."
+  },
+  "Model_no": [],
+  "Part_no": [],
+  "Bid Summary": "The Dallas Independent School District (Dallas ISD) is soliciting proposals under RFP JA-207652 (SOURCING #168884) for student and staff computing devices including laptops, desktops, tablets, monitors, and related accessories, with an anticipated contract term of three years plus two optional one-year renewals, totaling up to five years. The procurement is bond-funded and quantities are estimated over the contract life with flexible purchase volume and delivery starting September 2024, requiring vendors to provide white glove services including asset decaling, etching, and deployment coordination with Dallas ISD ED TECH. The award approach allows for single or multiple vendors on a line-item basis, with evaluation weighted on purchase price (40 points), vendor reputation (10 points), quality (15 points), district needs fit (15 points), MWBE participation (20 points), and other relevant factors, culminating in a best value award anticipated by August 2024 Board meeting. Addendum 1 clarified warranty terms requiring OEM-backed warranties of one year for student Chromebooks and three years for Windows laptops and staff devices, confirmed funding sources, delivery and deployment details, and submission requirements. Addendum 2 extended the proposal due date to July 9, 2024, 2:00 PM CST, without other changes. Vendors must acknowledge all addenda upon proposal submission."
+}

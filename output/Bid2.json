@@ -1,0 +1,171 @@
+{
+  "Bid Number": "BPM044557",
+  "Title": "Dell Laptops w/Extended Warranty",
+  "company_name": "State of Maryland Treasurer's Office",
+  "contact_info": {
+    "buyer_name": "Tamaira Hawkins",
+    "buyer_phone": "410-260-7533",
+    "buyer_email": "Thawkins@treasurer.state.md.us",
+    "procurement_office_phone": "410-260-7533",
+    "procurement_office_email": "thawkins@treasurer.state.md.us",
+    "mailing_address": "MD State Treasurer’s Office, 80 Calvert Street, Room 109, Annapolis, MD 21401",
+    "on_site_contact_name": "James Simpson",
+    "on_site_contact_phone": "410-260-6063",
+    "on_site_contact_email": "jsimpson@treasurer.state.md.us",
+    "on_site_address": "80 Calvert Street, Room 109, Annapolis, MD 21401",
+    "portal_url": "https://emma.maryland.gov/page.aspx/en/bpm/process_manage_extranet/70726",
+    "solicitation_url": "https://emma.maryland.gov/page.aspx/en/bpm/process_manage_extranet/70726"
+  },
+  "Due Date": {
+    "due": "2024-06-10T14:00:00-04:00",
+    "original_due": null,
+    "timezone": "EDT",
+    "source": "doc2"
+  },
+  "Pre Bid Meeting": {
+    "datetime": null,
+    "mandatory": null,
+    "location_or_link": null,
+    "questions_due": "2024-06-01T14:00:00-04:00",
+    "answers_posted": null
+  },
+  "Delivery Date": {
+    "days_after_order": 45,
+    "notes": "Delivery required within 45 days of award."
+  },
+  "Bid Submission Type": {
+    "methods": [
+      "electronic portal"
+    ],
+    "portal_url": "https://procurement.maryland.gov/emma-qrgs/",
+    "hard_copy_count": null,
+    "delivery_address": "MD State Treasurer's Office, 80 Calvert Street, Room 109, Annapolis, MD 21401",
+    "prohibited_methods": [
+      "email",
+      "fax",
+      "U.S. Mail",
+      "hand delivery"
+    ],
+    "procurement_method": "RFP"
+  },
+  "Term of Bid": {
+    "initial_term_years": null,
+    "renewal_count": null,
+    "renewal_term_years": null,
+    "max_total_years": null,
+    "notes": "Proposals/quotes must be valid for at least 90 days after the due date. Delivery required within 45 days of award. Fixed price PORFP type."
+  },
+  "Payment Terms": {
+    "terms": "Invoice(s) shall be submitted within 10 days of delivery. Email invoices to STOaccountspayable@treasurer.state.md.us. Include contractor info, PORFP number, date, invoice number, amount due, proof of delivery and serial numbers.",
+    "net_days": 10,
+    "funding_source": null,
+    "notes": "Fixed price PORFP. No restocking fee if item returned due to vendor error."
+  },
+  "Bid Bond Requirement": {
+    "required": false,
+    "amount": null,
+    "other_bonds": [],
+    "insurance_notes": "None specified in the PORFP."
+  },
+  "Contract or Cooperative to use": {
+    "vehicle": "Direct contract under the State of Maryland Desktop, Laptop and Tablet 2015 Master Contract 060B5400007.",
+    "cooperative_name": null,
+    "others_may_ride": null,
+    "rider_programs": []
+  },
+  "Installation": {
+    "required": false,
+    "services": [],
+    "notes": "No installation or configuration services required; scope limited to delivery of hardware only."
+  },
+  "Any Additional Documentation Required": [
+    {
+      "name": "Dell Limited Hardware Warranty certificate or Affidavit",
+      "mandatory": true,
+      "timing": "post award",
+      "source": "doc5 page 3 Section 4 – Scope of Work"
+    },
+    {
+      "name": "Mercury Affidavit",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc5 page 2 Warranty and Submission Instructions"
+    },
+    {
+      "name": "Contract Affidavit",
+      "mandatory": true,
+      "timing": "withproposal",
+      "source": "doc1 Contract Affidavit document confirms Maryland procurement requirement"
+    }
+  ],
+  "Product": [
+    {
+      "line": 1,
+      "name": "SI# CC7802 Dell Latitude 5550",
+      "unit": "each",
+      "estimated_quantity": 30,
+      "notes": "Laptop, Microsoft Copilot ready"
+    },
+    {
+      "line": 2,
+      "name": "Dell Thunderbolt 4 Dock WD22TB4",
+      "unit": "each",
+      "estimated_quantity": 30,
+      "notes": "Accessory dock"
+    }
+  ],
+  "Product Specification": {
+    "SI# CC7802 Dell Latitude 5550": [
+      "Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo)",
+      "Windows 11 Pro, English, Brazilian Portuguese PT-BR, French, Spanish",
+      "No Microsoft Office License Included - 30 day Trial Offer Only",
+      "Integrated Intel graphics for Intel Core Ultra 5 125U processor",
+      "Intel Rapid Storage Technology Driver",
+      "Intel vPro Management Disabled",
+      "16 GB: 2 x 8 GB, DDR5, 5600 MT/s (5200 MT/s with 13th Gen Intel Core processors)",
+      "256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD",
+      "15.6\", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC, FHD Cam",
+      "English US backlit AI hotkey keyboard with numeric keypad, 99-key",
+      "Intel AX211 WLAN Driver",
+      "Intel Wi-Fi 6E (6 where 6E unavailable) AX211, 2x2, 802.11ax, Bluetooth 5.3 wireless card",
+      "3-cell, 54 Wh, ExpressCharge Capable, ExpressCharge Boost Capable",
+      "65W AC adapter, USB Type-C, EcoDesign",
+      "No Security",
+      "E4 Power Cord 1M for US",
+      "Latitude 5550 Quick Start Guide",
+      "SERI Guide (ENG/FR/Multi)",
+      "ENERGY STAR Qualified",
+      "Custom Configuration",
+      "Dell Additional Software",
+      "Mix Model MTL 65WADPT",
+      "Intel Core Ultra 5 Non-vPro Label",
+      "FHD HDR RGB Camera, TNR, Camera Shutter, Microphone",
+      "Windows AutoPilot",
+      "EPEAT 2018 Registered (Gold)"
+    ],
+    "General Requirements": [
+      "New and unused equipment",
+      "ENERGY STAR certified product",
+      "Must be Microsoft Copilot ready",
+      "Authorized Dell reseller status required",
+      "Delivery within 45 days of award",
+      "Dell Limited Hardware Warranty extended 3 years from delivery with certificate required"
+    ]
+  },
+  "MFG for Registration": {
+    "manufacturers": [
+      "Dell"
+    ],
+    "brand_agnostic": false,
+    "reseller_requirements": "Must be an authorized reseller for Dell; the state reserves the right to request a Letter of Authorization (LOA) from the Manufacturer or Distributor.",
+    "platforms_referenced": null,
+    "registration_notes": "Limited to Master Contractors awarded contract under the Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007."
+  },
+  "Model_no": [
+    "SI# CC7802"
+  ],
+  "Part_no": [
+    "WD22TB4"
+  ],
+  "Bid Summary": "The State of Maryland Treasurer's Office is procuring 30 units of Dell Latitude 5550 laptops and 30 units of Dell Thunderbolt 4 Dock WD22TB4 under solicitation BPM044557, with required delivery by June 10, 2024. This procurement is conducted as a Small Business Reserve under the Desktop, Laptop and Tablet 2015 Master Contract 060B5400007, limiting participation to certified small business Master Contractors. The contract is a fixed price Purchase Order Request for Proposals (PORFP) with a required extended Dell Limited Hardware Warranty of 3 years from delivery, with warranty certificates to be presented upon award. Bids must be submitted electronically through the eMaryland Marketplace Advantage system by the due date, June 10, 2024 at 2:00 PM EDT. Evaluation criteria prioritize accuracy of bid meeting all requirements, followed by price, with an intent to award to one vendor for both functional areas. The agency point of contact is Tamaira Hawkins, and questions must be submitted by June 1, 2024. The State reserves the right to purchase more or less than specified quantities based on funding availability. There are no noted addenda changing material terms at this time."
+}

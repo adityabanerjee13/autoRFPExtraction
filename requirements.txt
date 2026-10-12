@@ -1,0 +1,9 @@
+langchain>=1.0
+langgraph>=1.0
+langchain-openai>=1.0
+rank-bm25>=0.2.2
+pypdf>=6.0
+pypdfium2>=4.30
+beautifulsoup4>=4.12
+lxml>=5.0
+spacy>=3.7

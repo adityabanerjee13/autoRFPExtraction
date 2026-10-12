@@ -1,0 +1,103 @@
+Processing documents in C:\Users\Aditya Banerjee\Downloads\infoExtract\task\Bid2
+  reading Contract_Affidavit.pdf
+  reading Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html
+  reading Dell_Laptop_Specs.pdf
+  reading Mercury_Affidavit.pdf
+  reading PORFP_-_Dell_Laptop_Final.pdf
+Generating summary and signals
+  doc1 batch 1/1 (Page 1 .. Page 3): tokens in 2,186 / out 551
+  doc2 batch 1/1 (Page 1 .. Page 1): tokens in 870 / out 378
+  doc3 batch 1/1 (Page 1 .. Page 3): tokens in 2,115 / out 680
+  doc4 batch 1/1 (Page 1 .. Page 1): tokens in 716 / out 262
+  doc5 batch 1/1 (Page 1 .. Page 4): tokens in 1,872 / out 893
+  merge bid: tokens in 596 / out 222
+  summary & signals total: tokens in 8,355 / out 2,986 (6 calls)
+Extracting fields
+
+== Identification fields: ['Bid Number', 'Title', 'company_name', 'contact_info']
+  turn 1 [tokens in 4,949 / out 197]: grep_lines({"pattern": "Bid Number"}), grep_lines({"pattern": "Solicitation Number"}), grep_lines({"pattern": "Title"}), bm25_search({"document": "doc2", "query": "solicitation number", "top_k": 5}), bm25_search({"document": "doc2", "query": "contact", "top_k": 5}), bm25_search({"document": "doc5", "query": "contact", "top_k": 5}), bm25_search({"document": "doc5", "query": "agency", "top_k": 5}), bm25_search({"document": "doc5", "query": "title", "top_k": 5})
+  turn 2 [tokens in 7,536 / out 53]: register_record({"field": "Bid Number", "value_json": "BPM044557", "evidence": ["g6", "g3", "b1", "b2"], "key_evidence": {"primary": "g6"}, "confidence": 1})
+    registered 'Bid Number' (source doc2:1). Remaining: ['Title', 'company_name', 'contact_info']
+  turn 3 [tokens in 7,622 / out 52]: register_record({"field": "Title", "value_json": "Dell Laptops w/Extended Warranty", "evidence": ["g3", "b1", "b2"], "key_evidence": {"title": "g3"}, "confidence": 1})
+    registered 'Title' (source doc2:1). Remaining: ['company_name', 'contact_info']
+  turn 4 [tokens in 7,703 / out 59]: register_record({"field": "company_name", "value_json": "State of Maryland Treasurer's Office", "evidence": ["g6", "g3", "b1", "b2", "b3"], "key_evidence": {"company_name": "b3"}, "confidence": 1})
+    registered 'company_name' (source doc2:1, doc5:3). Remaining: ['contact_info']
+  turn 5 [tokens in 7,793 / out 323]: register_record({"field": "contact_info", "value_json": {"buyer_name": "Tamaira Hawkins", "buyer_phone": "410-260-7533", "buyer_email": "Thawkins@treasurer.state.md.us", "procurement_office_phone": "410-260-7533", "procurement_office_email": "thawkins@treasurer.state.md.us", "mailing_address": "MD State Treasurer’s)
+    registered 'contact_info' (source doc2:1, doc5:3). ALL FIELDS OF THIS GROUP ARE REGISTERED - stop.
+  done in 5 turns | Identification fields tokens in 35,603 / out 684 (5 calls)
+
+== Schedule fields: ['Due Date', 'Pre Bid Meeting', 'Delivery Date']
+  turn 1 [tokens in 4,975 / out 124]: bm25_search({"document": "doc5", "query": "Due Date", "top_k": 3}), bm25_search({"document": "doc5", "query": "Pre Proposal Conference", "top_k": 3}), bm25_search({"document": "doc5", "query": "Delivery", "top_k": 3}), bm25_search({"document": "doc2", "query": "Closing Date", "top_k": 2})
+  turn 2 [tokens in 7,246 / out 87]: register_record({"field": "Due Date", "value_json": {"due": "2024-06-10T14:00:00-04:00", "original_due": null, "timezone": "EDT", "source": "doc2"}, "evidence": ["b10", "b2"], "key_evidence": {"due": "b10", "timezone": "b2", "source": "b10"}, "confidence": 1})
+    registered 'Due Date' (source doc2:1, doc5:2). Remaining: ['Pre Bid Meeting', 'Delivery Date']
+  turn 3 [tokens in 7,369 / out 29]: bm25_search({"document": "doc5", "query": "Pre-Bid Meeting", "top_k": 5})
+  turn 4 [tokens in 8,241 / out 83]: register_record({"field": "Pre Bid Meeting", "value_json": {"datetime": null, "mandatory": null, "location_or_link": null, "questions_due": "2024-06-01T14:00:00-04:00", "answers_posted": null}, "evidence": ["b2"], "key_evidence": {"questions_due": "b2"}, "confidence": 0.8})
+    registered 'Pre Bid Meeting' (source doc5:2). Remaining: ['Delivery Date']
+  turn 5 [tokens in 8,351 / out 32]: bm25_search({"document": "doc5", "query": "delivery date", "top_k": 3, "page_no": 2})
+  turn 6 [tokens in 9,019 / out 66]: register_record({"field": "Delivery Date", "value_json": {"days_after_order": 45, "notes": "Delivery required within 45 days of award."}, "evidence": ["b16"], "key_evidence": {"days_after_order": "b16", "notes": "b16"}, "confidence": 0.9})
+    registered 'Delivery Date' (source doc5:2). ALL FIELDS OF THIS GROUP ARE REGISTERED - stop.
+  done in 6 turns | Schedule fields tokens in 45,201 / out 421 (6 calls)
+
+== Commercial / contractual fields: ['Bid Submission Type', 'Term of Bid', 'Payment Terms', 'Bid Bond Requirement', 'Contract or Cooperative to use', 'Installation']
+  turn 1 [tokens in 5,636 / out 221]: bm25_search({"document": "doc5", "query": "submission instructions methods portal email hard copy", "top_k": 5}), bm25_search({"document": "doc5", "query": "term length renewal duration contract period", "top_k": 5}), bm25_search({"document": "doc5", "query": "payment terms invoicing net 30 net 45 funding source pricing", "top_k": 5}), bm25_search({"document": "doc5", "query": "bid bond bond security performance payment insurance", "top_k": 5}), bm25_search({"document": "doc5", "query": "contract cooperative interlocal piggyback buyboard tips sourcewell", "top_k": 5}), bm25_search({"document": "doc5", "query": "installation configure image asset tag train disposal white-glove", "top_k": 5})
+  turn 2 [tokens in 11,954 / out 152]: register_record({"field": "Bid Submission Type", "value_json": {"methods": ["electronic portal"], "portal_url": "https://procurement.maryland.gov/emma-qrgs/", "hard_copy_count": null, "delivery_address": "MD State Treasurer's Office, 80 Calvert Street, Room 109, Annapolis, MD 21401", "prohibited_methods": ["email",)
+    registered 'Bid Submission Type' (source doc5:1, doc5:3). WARNING: not found in the cited passages: ["methods[0]='electronic portal'"] - re-check them or cite the passage that contains each. Remaining: ['Term of Bid', 'P
+  turn 3 [tokens in 12,189 / out 112]: register_record({"field": "Term of Bid", "value_json": {"initial_term_years": null, "renewal_count": null, "renewal_term_years": null, "max_total_years": null, "notes": "Proposals/quotes must be valid for at least 90 days after the due date. Delivery required within 45 days of award. Fixed price PORFP type."}, "evi)
+    registered 'Term of Bid' (source doc5:1, doc5:2). Remaining: ['Payment Terms', 'Bid Bond Requirement', 'Contract or Cooperative to use', 'Installation']
+  turn 4 [tokens in 12,348 / out 139]: register_record({"field": "Payment Terms", "value_json": {"terms": "Invoice(s) shall be submitted within 10 days of delivery. Email invoices to STOaccountspayable@treasurer.state.md.us. Include contractor info, PORFP number, date, invoice number, amount due, proof of delivery and serial numbers.", "net_days": 10, ")
+    registered 'Payment Terms' (source doc5:2). WARNING: not found in the cited passages: ["terms='Invoice(s) shall be submitted within 10 '"] - re-check them or cite the passage that contains each. Remaining: ['Bid Bond Req
+  turn 5 [tokens in 12,559 / out 66]: register_record({"field": "Bid Bond Requirement", "value_json": {"required": false, "amount": null, "other_bonds": [], "insurance_notes": "None specified in the PORFP."}, "evidence": ["b14"], "key_evidence": {"required": "b14"}, "confidence": 0.9})
+    registered 'Bid Bond Requirement' (source doc5:1). Remaining: ['Contract or Cooperative to use', 'Installation']
+  turn 6 [tokens in 12,658 / out 94]: register_record({"field": "Contract or Cooperative to use", "value_json": {"vehicle": "Direct contract under the State of Maryland Desktop, Laptop and Tablet 2015 Master Contract 060B5400007.", "cooperative_name": null, "others_may_ride": null, "rider_programs": []}, "evidence": ["b19", "b20"], "key_evidence": {"ve)
+    registered 'Contract or Cooperative to use' (source doc5:1). WARNING: not found in the cited passages: ["vehicle='Direct contract under the State of Maryl'"] - re-check them or cite the passage that contains each. Remain
+  turn 7 [tokens in 12,814 / out 73]: register_record({"field": "Installation", "value_json": {"required": false, "services": [], "notes": "No installation or configuration services required; scope limited to delivery of hardware only."}, "evidence": ["b4", "b5"], "key_evidence": {"required": "b4", "notes": "b4"}, "confidence": 0.8})
+    registered 'Installation' (source doc5:3, doc5:1). ALL FIELDS OF THIS GROUP ARE REGISTERED - stop.
+  done in 7 turns | Commercial / contractual fields tokens in 80,158 / out 857 (7 calls)
+
+== Compliance field: ['Any Additional Documentation Required']
+  turn 1 [tokens in 4,691 / out 98]: bm25_search({"document": "doc5", "query": "submit with proposal", "top_k": 5}), bm25_search({"document": "doc5", "query": "affidavit", "top_k": 5}), bm25_search({"document": "doc5", "query": "forms", "top_k": 5})
+  turn 2 [tokens in 6,541 / out 22]: grep_lines({"document": "doc5", "pattern": "affidavit"})
+  turn 3 [tokens in 6,686 / out 28]: bm25_search({"document": "doc1", "query": "affidavit", "top_k": 5})
+  turn 4 [tokens in 7,384 / out 29]: bm25_search({"document": "doc4", "query": "mercury affidavit", "top_k": 5})
+  turn 5 [tokens in 8,064 / out 23]: grep_lines({"document": "doc5", "pattern": "Contract Affidavit"})
+  turn 6 [tokens in 8,104 / out 27]: grep_lines({"document": "doc5", "pattern": "affidavit", "max_hits": 10})
+  turn 7 [tokens in 8,254 / out 20]: grep_lines({"document": "doc5", "pattern": "submission"})
+  turn 8 [tokens in 8,316 / out 21]: grep_lines({"document": "doc5", "pattern": "must submit"})
+  turn 9 [tokens in 8,352 / out 27]: bm25_search({"document": "doc5", "query": "attachments required", "top_k": 3})
+  turn 10 [tokens in 8,962 / out 26]: bm25_search({"document": "doc2", "query": "attachments", "top_k": 5})
+  turn 11 [tokens in 9,012 / out 28]: bm25_search({"document": "doc5", "query": "Additional Documentation Required", "top_k": 5})
+  turn 12 [tokens in 9,624 / out 27]: bm25_search({"document": "doc5", "query": "documentation required", "top_k": 5})
+  turn 13 [tokens in 10,234 / out 21]: grep_lines({"document": "doc5", "pattern": "additional documentation"})
+  turn 14 [tokens in 10,270 / out 21]: grep_lines({"document": "doc5", "pattern": "required documents"})
+  turn 15 [tokens in 10,306 / out 20]: grep_lines({"document": "doc5", "pattern": "forms"})
+  turn 16 [tokens in 10,340 / out 27]: bm25_search({"document": "doc1", "query": "certification", "top_k": 5})
+  turn 17 [tokens in 11,430 / out 24]: grep_lines({"document": "doc5", "pattern": "Mercury Affidavit"})
+  turn 18 [tokens in 11,505 / out 174]: register_record({"field": "Any Additional Documentation Required", "value_json": [{"name": "Dell Limited Hardware Warranty certificate or Affidavit", "mandatory": true, "timing": "post award", "source": "doc5 page 3 Section 4 – Scope of Work"}, {"name": "Mercury Affidavit", "mandatory": true, "timing": "withproposa)
+    registered 'Any Additional Documentation Required' (source doc5:3, doc5:2, doc1:3, doc1:1). WARNING: not found in the cited passages: ["[0].name='Dell Limited Hardware Warranty certifica'", "[0].timing='post award'", "[1
+  done in 18 turns | Compliance field tokens in 158,075 / out 663 (18 calls)
+
+== Product fields: ['Product', 'Product Specification', 'MFG for Registration', 'Model_no', 'Part_no']
+  turn 1 [tokens in 5,304 / out 153]: bm25_search({"document": "doc5", "query": "price schedule", "top_k": 5}), bm25_search({"document": "doc5", "query": "product list", "top_k": 5}), bm25_search({"document": "doc5", "query": "line item", "top_k": 5}), bm25_search({"document": "doc3", "query": "SKU", "top_k": 5}), bm25_search({"document": "doc2", "query": "Dell Latitude 5550", "top_k": 5})
+  turn 2 [tokens in 8,801 / out 114]: register_record({"field": "Product", "value_json": [{"line": 1, "name": "SI# CC7802 Dell Latitude 5550", "unit": "each", "estimated_quantity": 30, "notes": "Laptop, Microsoft Copilot ready"}, {"line": 2, "name": "Dell Thunderbolt 4 Dock WD22TB4", "unit": "each", "estimated_quantity": 30, "notes": "Accessory dock"}])
+    registered 'Product' (source doc5:3, doc2:1). WARNING: not found in the cited passages: ["[0].unit='each'", "[1].unit='each'"] - re-check them or cite the passage that contains each. Remaining: ['Product Specification', 
+  turn 3 [tokens in 8,996 / out 20]: read_page({"document": "doc3", "page_no": 1})
+  turn 4 [tokens in 9,585 / out 489]: register_record({"field": "Product Specification", "value_json": {"SI# CC7802 Dell Latitude 5550": ["Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo)", "Windows 11 Pro, English, Brazilian Portuguese PT-BR, French, Spanish", "No Microsoft Office License Included - 30 day Tri)
+    registered 'Product Specification' (source doc3:1, doc5:3, doc5:2). WARNING: not found in the cited passages: ["General Requirements[3]='Authorized Dell reseller status required'", "General Requirements[5]='Dell Limited 
+  turn 5 [tokens in 10,166 / out 149]: bm25_search({"document": "doc5", "query": "manufacturer brands", "top_k": 5}), bm25_search({"document": "doc5", "query": "manufacturer requirements", "top_k": 5}), bm25_search({"document": "doc5", "query": "authorized reseller", "top_k": 5}), bm25_search({"document": "doc3", "query": "manufacturer", "top_k": 5}), bm25_search({"document": "doc2", "query": "manufacturer", "top_k": 5})
+  turn 6 [tokens in 13,429 / out 152]: register_record({"field": "MFG for Registration", "value_json": {"manufacturers": ["Dell"], "brand_agnostic": false, "reseller_requirements": "Must be an authorized reseller for Dell; the state reserves the right to request a Letter of Authorization (LOA) from the Manufacturer or Distributor.", "platforms_reference)
+    registered 'MFG for Registration' (source doc5:1, doc5:2). Remaining: ['Model_no', 'Part_no']
+  turn 7 [tokens in 13,618 / out 52]: register_record({"field": "Model_no", "value_json": ["SI# CC7802"], "evidence": ["b7", "b11", "b17"], "key_evidence": {"0": "b7"}, "confidence": 1})
+    registered 'Model_no' (source doc5:3, doc2:1). Remaining: ['Part_no']
+  turn 8 [tokens in 13,701 / out 48]: register_record({"field": "Part_no", "value_json": ["WD22TB4"], "evidence": ["b7", "b11"], "key_evidence": {"0": "b7"}, "confidence": 1})
+    registered 'Part_no' (source doc5:3, doc2:1). ALL FIELDS OF THIS GROUP ARE REGISTERED - stop.
+  done in 8 turns | Product fields tokens in 83,600 / out 1,177 (8 calls)
+
+== Synthesis field: ['Bid Summary']
+  turn 1 [tokens in 6,458 / out 363]: bm25_search({"document": "doc5", "query": "summary overview award due date evaluation"}), bm25_search({"document": "doc2", "query": "award approach evaluation weights due date"}), bm25_search({"document": "doc1", "query": "contract length funding award approach"}), bm25_search({"document": "doc5", "query": "evaluation criteria award approach"}), bm25_search({"document": "doc5", "query": "addendum changes"}), bm25_search({"document": "doc2", "query": "contract length funding award"}), bm25_search({"document": "doc5", "query": "evaluation weights"}), bm25_search({"document": "doc5", "query": "key service obligations"}), bm25_search({"document": "doc5", "query": "due date"}), bm25_search({"document": "doc2", "query": "due date"}), bm25_search({"document": "doc5", "query": "key service"}), bm25_search({"document": "doc5", "query": "contract length"}), bm25_search({"document": "doc5", "query": "funding"}), bm25_search({"document": "doc5", "query": "contract length"}), bm25_search({"document": "doc5", "query": "award approach"})
+  turn 2 [tokens in 17,306 / out 398]: register_record({"field": "Bid Summary", "value_json": "The State of Maryland Treasurer's Office is procuring 30 units of Dell Latitude 5550 laptops and 30 units of Dell Thunderbolt 4 Dock WD22TB4 under solicitation BPM044557, with required delivery by June 10, 2024. This procurement is conducted as a Small Busines)
+    registered 'Bid Summary' (source doc5:3, doc5:4, doc5:2, doc5:1). WARNING: not found in the cited passages: ['value="The State of Maryland Treasurer\'s Office"'] - re-check them or cite the passage that contains each. AL
+  done in 2 turns | Synthesis field tokens in 23,764 / out 761 (2 calls)
+
+Total token usage: in 434,756 / out 7,549 / total 442,305 over 52 LLM calls
+Wrote output\Bid2.json
+Wrote output\Bid2.evidence.json
